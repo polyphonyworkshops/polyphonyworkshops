@@ -1,0 +1,959 @@
+
+
+body{
+  background-Color: #FFFCF9;
+  margin:0 auto;
+}
+
+
+
+.header{
+  background-Color : #26547C;  /*#FFD166;*/
+  color: #FFFCF9;
+  text-align : center; 
+  display:block;
+  /*margin:0.1rem;*/
+}
+
+.header{
+  padding:5%;
+}
+.logo{
+  max-width:40%;
+  height:auto;
+}
+@media (max-width:481px){
+.logo{
+  max-width:300px;
+  height:auto;
+
+}
+}
+
+.font{
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; 
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+.font2{
+  font-family:Futura, Didot;
+}
+
+.topnav {
+  background-color: #FFD166;;
+  overflow: hidden;
+
+}
+.topnav a {
+  
+  float: left;
+  color: #FFFCF9;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.topnav a:hover {
+  background-color: #f8e1ab;
+  color:black;
+}
+.topnav a:active {
+  background-color: #f8e1ab;
+color:black;
+
+}
+@media (max-width:481px){
+  .topnav a{
+    font-size:16px;
+  }
+}
+
+/*INDEX*/
+
+#music-tuition-title{
+  color:black;
+  font-size:40px;
+  text-align: left;
+  font-style: italic;
+}
+.music-tuition{ 
+  grid-area: right;
+}
+.courses{
+  grid-area : middle;
+  font-size:30px;
+  margin:2.5rem;
+  font-style: none;
+}
+
+#image{
+  grid-area: left;
+  margin-top:3.125rem;
+  /* style="width:330px;height:330px; */
+  
+  /* margin-right:5%; */
+  height:auto;
+}
+.image{
+  grid-area: left;
+  margin-right:5%;
+  
+}
+.location{
+  grid-area: footer;
+  font-style: italic;
+  font-size: 30px;
+}
+
+/* grid one in home page */
+.grid-container{
+  display:grid;
+  grid-template-areas:'right right middle middle left left'
+  'footer footer footer footer left left';
+  grid-gap: 5px;
+  margin-right:10%;
+  margin-left:10%;
+  /* margin-top:5%; */
+  
+}
+
+@media (max-width:940px){
+  #music-tuition-title{
+    font-size:25px;
+
+  }
+  .courses{
+    font-size:20px;
+    margin:1.25rem;
+  }
+  #image{
+    width:100%;
+    height:300px;
+    margin-top:1.563rem;
+    
+  }
+  .location{
+    font-size:15px;
+    text-align: center;
+  }
+
+  .image{
+  grid-area:center;
+  display:block; 
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .grid-container{
+  margin-right:10%;
+  margin-left:10%;
+  grid-template-areas:'right right right middle middle middle '
+  'footer footer footer footer footer footer'
+  'center center center center center center';
+  margin-bottom:3%;
+  }
+}
+
+hr.solid{
+  border-top: 3px solid #26547C;
+  margin-left: 10%;
+  margin-right:10%;
+}
+
+#definition{
+  text-align: center;
+  font-size: 30px;
+  margin-left:20%;
+  margin-right:20%;
+  font-style: italic;
+}
+@media (max-width:481px){
+  #definition{
+    font-size:14pt;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+#moto{
+  text-align: center;
+  font-size: 20px;
+  margin-left:20%;
+  margin-right:20%;
+}
+@media (max-width:481px){
+  #moto{
+    font-size:15px;
+    padding-top:3%;
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+.whychooseus{
+  background-color:rgba(239, 71, 111,0.8);
+  margin-left:10%;
+  margin-right:10%;
+  border-radius: 4px;
+  line-height:2;
+}
+
+.whychooseus p{
+  text-align:center;
+  margin-top:5%;
+padding-top:3%;
+font-size: 30px;
+color:#FFFCF9;
+}
+@media (max-width:481px){
+  .whychooseus p{
+    font-size: 20px;
+    /* margin-top:; */
+    margin:0%;
+  }
+}
+.grid-container2{
+  display:grid;
+  grid-template-areas:'right right right left left left';
+  grid-gap: 5px;
+  font-size: 18px; 
+  margin:1.25rem;
+  color:#FFFCF9;
+}
+@media (max-width:481px){
+  .grid-container2{
+    font-size:12px;
+    margin-left:1%;
+    margin-right:1%;
+    line-height: 1.5;
+    grid-gap:0px;
+  }
+}
+
+
+
+
+/* contact form */
+
+input[type=text], textarea{
+  width:100%;
+  /* padding:12px; */
+  border:1px solid #EF476F;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top:0.375rem;
+  margin-bottom:1rem;
+  /* margin-left:30px;
+  margin-right:30px; */
+  resize:vertical;
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  font-size:20px;
+}
+
+input[type=submit] {
+  background-color: #EF476F;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover{
+  background-color:#f8e1ab;
+}
+
+.container{
+  margin-left:20%;
+  margin-right:20%;
+  margin-top:5%;
+  background-color:#FFD166;
+  padding:1.25rem;
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  font-size:20px;
+}
+
+.contact-us-title {
+  text-align:center;
+  color:#EF476F;
+  margin-top:2.5rem;
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+
+}
+.contact-us-title h2{
+  font-size: 30px;
+  font-style:bold;
+}
+.contact-us-title p{
+  font-size: 20px;
+  font-style: italic;
+}
+.contact-details{
+  padding-top:1.875rem;
+  padding-bottom: 3.125;
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  text-align: center;
+}
+.contact-details p{
+  font-size: 20px;
+
+}
+
+/*About us */
+
+.about-us-title{
+  text-align:center;
+  margin-top:3%;
+  font-size:35px;
+}
+
+.ethics{
+  margin-top: 3%;
+  margin-right:5%;
+  margin-left:5%;
+  border-style:solid;
+  border-color:#EF476F;
+  border-radius: 4px;
+  text-align:justify;
+}
+
+.ethics h2{  
+  font-size:20px;
+  text-decoration:underline;
+  padding-top:2%;
+  padding-left:2%;
+}
+.ethics p{
+  font-size:20px;
+  padding:2%;
+}
+
+@media (max-width:481px){
+  .ethics p{
+    font-size:15px;
+  }
+}
+
+.christi-bio{
+  color:#FFFCF9;
+  margin-top: 3%;
+  margin-right:3%;
+  margin-left:3%;
+  font-size: 18px;
+  text-align:justify;
+  grid-area:item1;
+}
+@media (max-width:481px){
+  .christi-bio{
+    font-size:15px;
+    text-align: justify;
+  }
+}
+/* img level*/
+ #christi-foto{ 
+  width:100%;
+} 
+.christi-foto{/*div level*/
+  grid-area:item2;
+  margin:5%;
+}
+#vasilis-foto{
+  width:100%;
+}
+.vasilis-foto{
+  grid-area:item2;
+  margin:5%;
+ 
+
+}
+
+#vaiva-foto{
+  width:90%;
+}
+.vaiva-foto{
+  grid-area:item2;
+  margin:3%;
+
+}
+#jac-foto{
+  width:90%;
+}
+.jac-foto{
+  grid-area:item2;
+  margin:3%;
+
+}
+
+#valeria-foto{
+  width:90%;
+}
+.valeria-foto{
+  grid-area:item2;
+  margin:3%;
+
+}
+#dan-foto{
+  width:90%;
+}
+.dan-foto{
+  grid-area:item2;
+  margin:3%;
+
+}
+
+.grid-christi{
+  background-color:#26547C;
+  border-radius: 4px;
+  display:grid;
+  grid-template-areas:'item1 item1 item1 item1 item2 item2';
+  /* grid-gap: 5px; */
+  font-size: 20px; 
+  color:black;
+  margin-top: 3%;
+  margin-right:5%;
+  margin-left:5%;
+  margin-bottom: 3%;
+}
+@media (max-width:481px){
+  .grid-christi{
+    grid-template-areas: 'item1''item2';
+  }
+  #christi-foto{ /* img level*/
+    width:200px; 
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+  }
+}
+
+/* WORKSHOPS*/
+.workshops-intro h2{
+  text-align:center;
+  margin-top:3%;
+  font-size:35px;
+
+}
+.workshops-intro p{
+  text-align:center;
+  font-size:20px;
+
+}
+
+.Theory{ grid-area: headerL;
+  border-style: solid;
+  background-color:#06d6a0; 
+  border-color:black;
+}
+.Performance{ grid-area:headerR;
+  border-style: solid;
+  background-color:#EF476F;
+  border-color:black;}
+.Aural{  grid-area: left;
+  border-style: solid;
+  background-color:#06d6a0;
+  border-color:black;}
+.Scales{  grid-area: middle;
+  border-style: solid;
+  background-color:#FFD166;
+  border-color:black; }
+.Jazz{ grid-area: right;
+  border-style: solid;
+  background-color:#26547C;
+  border-color:black;}
+.Coding{ grid-area: footer;
+  border-style: solid;
+  background-color:#EF476F;
+  border-color:black;}
+
+.grid-workshops{
+  display:grid;
+  grid-template-areas:'headerL headerL headerL headerR headerR headerR'
+  'right right middle middle left left'
+  'footer footer footer footer footer footer';
+  text-align: center;
+  border-style: solid;
+  font-size:30px;
+  margin-left:10%;
+  margin-right:10%;
+  border-radius: 8px;
+  border-color:black;
+  color:#FFFCF9; 
+}
+@media (max-width:481px){
+  .grid-workshops{
+    font-size:20px;
+  }
+}
+
+.when{
+  color:black;
+  background-color:#06d6a0;
+  margin-top:2%;
+  padding-left:10%;
+  padding-right:10%;
+  padding-top:0.625rem;
+  padding-bottom:0.625rem;
+  margin-top:5%;
+}
+
+.where{
+  border-style: solid;
+  border-color:#EF476F;
+  padding-left:10%;
+  padding-right:10%;
+  padding-top:0.625rem;
+  padding-bottom:0.625rem;
+}
+
+.goals{
+  background-color:#26547C;
+  padding-left:10%;
+  padding-right:10%;
+  padding-top:0.625rem;
+  padding-bottom:0.625rem;
+  color:#FFFCF9;
+}
+
+.read-more{
+  background-color: #FFD166;
+  text-align: center;
+  font-size:20px;
+  padding:2%;
+}
+.button {
+  transition-duration: 0.4s;
+}
+button:hover {
+background-color:#06d6a0;
+color:#FFFCF9;
+}
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+/*Worskops details (hiden page)*/
+
+#works-foto{
+  width:300px;
+  height:auto;
+}
+@media (max-width:481px){
+  #works-foto{
+    width:250px;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.theory-details{
+  grid-area:left;
+  font-size:20px;
+  text-align: justify;
+}
+.theory-foto{
+  grid-area:right;
+  margin:3%;
+}
+
+.theory-details-title{
+  grid-area:header;
+}
+
+.grid-theory{
+  background-color: #EF476F;
+  border-radius: 4px;
+  display:grid;
+  grid-template-areas:
+  'header header header header header header'
+  ' left left left right right right';
+  grid-gap: 5px;
+  color:#FFFCF9;
+  margin-top: 3%;
+  margin-right:10%;
+  margin-left:10%;
+  padding:3%;
+}
+@media (max-width:940px){
+  .theory-details-title{
+    font-size:15px;
+    text-align: center;
+  }
+  .theory-details{
+    font-size:15px;
+  }
+  .grid-theory{
+    grid-template-areas: 'header''right''left';
+  }
+}
+
+.grid-aural{
+  background-color:#06d6a0;
+  border-radius: 4px;
+  display:grid;
+  grid-template-areas:
+  ' left left left right right right';
+  grid-gap: 5px;
+  /* font-size: 20px;  */
+  /* margin:20px; */
+  color:#FFFCF9;
+  margin-top: 3%;
+  margin-right:10%;
+  margin-left:10%;
+  padding:3%;
+}
+
+.aural-details{
+  grid-area:right;
+  font-size:18px;
+  text-align: justify;
+}
+.aural-foto{
+  grid-area:left;
+  padding-top: 5rem;
+margin-right:1.25rem;
+}
+@media (max-width:940px){
+  .aural-details{
+    font-size:15px;
+  }
+  .aural-details h2{
+    text-align: center;
+  }
+  .aural-foto{
+    padding-top:5%;
+  }
+  .grid-aural{
+    grid-template-areas: 'right''left';
+  }
+}
+
+.grid-scales{
+  background-color:#EF476F;
+  border-radius: 4px;
+  display:grid;
+  grid-template-areas:
+  'header header header header header header'
+  'right right right left left left';
+  grid-gap: 5px;
+  color:#FFFCF9;
+  margin-top: 3%;
+  margin-right:10%;
+  margin-left:10%;
+  padding:3%;
+}
+
+.scales-details-title{
+  grid-area:header;
+}
+
+.scales-details{
+  grid-area:right;
+  font-size:16px;
+  text-align: justify;
+}
+.scales-foto{
+  grid-area:left;
+margin-right:1.25rem;
+}
+@media (max-width:940px){
+  .scales-details-title{
+    font-size:15px;
+    text-align: center;
+  }
+  .scales-details{
+    font-size:15px;
+  }
+  .grid-scales{
+    grid-template-areas: 'header''right''left';
+  }
+}
+
+.grid-coding{
+  background-color:#06d6a0;
+  border-radius: 4px;
+  display:grid;
+  grid-template-areas:
+   'right right right left left left';
+  grid-gap: 5px;
+  color:#FFFCF9;
+  margin-top: 3%;
+  margin-right:10%;
+  margin-left:10%;
+  padding:3%;
+  margin-bottom:1.2rem;
+}
+
+.coding-details{
+  grid-area:left;
+  font-size:16px;
+  text-align: justify;
+}
+.coding-foto{
+  grid-area:right;
+  padding-top: 1.875rem;
+margin-right:1.25rem;
+
+}
+@media (max-width:940px){
+  .coding-details{
+    font-size:15px;
+  }
+  .coding-details h2{
+    text-align: center;
+  }
+  .coding-foto{
+    padding-top:5%;
+  }
+  .grid-coding{
+    grid-template-areas: 'right''left';
+  }
+}
+
+/* Piano and Singing lessons*/
+
+#lessons-photo{
+  width:350px;
+  height: auto;
+}
+
+.piano-title{
+  font-size: 20px;
+  padding:3%;
+}
+.piano-bulletpoints{
+ grid-area:left;
+ font-size:25px;
+ line-height:1.8;
+}
+.pianolittle-photo{
+  padding-top:1.563rem;
+  grid-area:right;
+}
+
+.grid-piano{
+  display:grid;
+  grid-template-areas:
+   'left left left right right right ';
+  grid-gap: 5px;
+  margin-right:10%;
+  margin-left:10%;
+}
+.piano-details{
+  background-color:#26547C;
+  color:#FFFCF9;
+  
+}
+.piano-details p{
+  margin-left:10%;
+  margin-right:10%;
+  padding:3%;
+  font-size:16px;
+  text-align: justify;
+}
+@media (max-width:940px){
+  .piano-title{
+    font-size:15px;
+  }
+  .piano-bulletpoints{
+    font-size:18px;
+    margin-left: 8%;
+    margin-right:8%;
+    line-height: 1.5;
+  }
+  #lessons-photo{
+    width:250px;
+    height:auto;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .grid-piano{
+    grid-template-areas: 'left''right';
+  }
+  .piano-details p{
+font-size:14px;
+margin-left:5%;
+  margin-right:5%;
+  } 
+}
+
+.singing-title{
+  font-size: 20px;
+  padding:3%;
+}
+
+.singing-details{
+  color:black;
+  grid-area:right;
+  margin:3%;
+  font-size:18px;
+  text-align: justify;
+}
+
+.singing-photo{
+  grid-area:left;
+  padding:3%;
+  margin-top:2.5rem;
+}
+
+.grid-singing{
+  display:grid;
+  grid-template-areas:
+   'left left left right right right ';
+  grid-gap: 5px;
+  margin-right:10%;
+  margin-left:10%;
+  /* margin-top:3%; */
+  border-style: solid;
+  border-color:#EF476F;
+  border-radius:4px;
+  margin-bottom:3%;
+}
+@media  (max-width:940px){
+  .singing-title{
+    font-size:15px;
+  }
+  .grid-singing{
+    grid-template-areas: 'left''right';
+    margin-right:5%;
+  margin-left:5%;
+  }
+  
+  .singing-details p{
+    font-size:14px;
+  } 
+}
+
+/*Table - Prices*/
+
+.prices table{
+  display: block;
+  padding:2.5rem;
+  margin:1.25rem auto 1.25rem auto;
+  
+  border:solid;
+  border-radius: 4px;
+  border-color:#EF476F;
+  line-height: 2;
+  font-size:16px;
+}
+.footnote{
+  font-size:11px;
+}
+
+.prices th,td{
+  border-bottom:1px solid;
+}
+@media (max-width:940px){
+.prices table{
+  
+  font-size: 12px;
+  line-height:1.5;
+  width:300px;
+ 
+  } 
+}
+
+
+/* FOOTER */
+.part1{
+  grid-area:left;
+  font-size:16px;
+  padding-left:1.25rem;
+}
+.part2{
+  grid-area:middle;
+  font-size:16px;
+  
+}
+.part3{
+  grid-area:right;
+  font-size:16px;
+  padding-left:1.25rem;
+}
+.part3 a{
+  color:#FFFCF9;
+}
+.part3 a:hover{
+  background-color: #FFD166;
+  color:black;
+}
+.part4{
+  grid-area:right2;
+  padding-left:20px;
+}
+
+.website{
+  grid-area:footer;
+  text-align: center;
+}
+
+.footer{
+  display:grid;
+  grid-template-areas:
+  'left left middle middle right right'
+  'left left middle middle right2 right2'
+  'footer footer footer footer footer footer';
+  grid-gap:5px;
+  background-color:#26547C;
+width:100%;
+margin:auto;
+font-size:14px;
+color:#FFFCF9;
+}
+
+@media (max-width:481px){
+  .footer{
+    display: block;
+    padding: 1.25rem 0;
+  }
+  .part1{
+    font-size:20px;
+  }
+  .part2{
+    font-size:20px;
+    padding-left: 20px;
+  }
+  .part3{
+    font-size:19px;
+    /* content:"Follow us:"; */
+  }
+  .part4{
+    font-size:19px;
+  }
+  .website{
+    font-size: 20px;
+  }
+}
+
+.row{
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+.column {
+  float: center;
+  width: 30%;
+  padding: 15px;
+}
+
+.coming_soon{
+  
+  width: 40%;
+  padding: 15px;
+  margin:auto;
+}
+.back{
+  width: 8%;
+  padding: 15px;
+}
+@media (max-width:481px){
+ .back{ 
+    width: 12%;
+    padding: 15px;
+    margin:auto;
+  }
+}
+
