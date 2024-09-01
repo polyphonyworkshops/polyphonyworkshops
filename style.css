@@ -39,13 +39,15 @@ body{
 }
 
 .topnav {
-  background-color: #FFD166;;
+  background-color: #FFD166;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 
 }
 .topnav a {
   
-  float: center;
+  
   color: black;
   text-align: center;
   padding: 14px 16px;
