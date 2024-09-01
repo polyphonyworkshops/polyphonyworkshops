@@ -45,8 +45,8 @@ body{
 }
 .topnav a {
   
-  float: left;
-  color: #FFFCF9;
+  float: center;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
